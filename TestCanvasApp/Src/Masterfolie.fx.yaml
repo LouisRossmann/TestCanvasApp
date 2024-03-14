@@ -1,0 +1,99 @@
+"Masterfolie As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(232, 232, 232, 1)
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="Überschrift"
+        Visible: =If(Label5.Text = "1", true, false)
+        Width: =560
+        X: =40
+        Y: =8
+        ZIndex: =2
+
+    Label5 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="1"
+        Width: =560
+        X: =68
+        Y: =236
+        ZIndex: =3
+
+    Timer1 As timer:
+        Fill: =RGBA(0, 51, 102, 1)
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        Width: =280
+        X: =40
+        Y: =122
+        ZIndex: =4
+
+    Slider1 As slider:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Max: =200
+        RailFill: =RGBA(128, 130, 133, 1)
+        ValueFill: =RGBA(0, 89, 178, 1)
+        Width: =560
+        X: =52
+        Y: =368
+        ZIndex: =5
+
+    Label6 As label:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: =Concatenate("Value = ", Slider1.Value)
+        Width: =560
+        X: =80
+        Y: =567
+        ZIndex: =6
+
+    Radio1 As radio:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =164
+        HoverColor: =RGBA(0, 89, 178, 1)
+        Items: =RadioSample
+        RadioBorderColor: =RGBA(0, 89, 178, 1)
+        Size: =21
+        Width: =300
+        X: =176
+        Y: =738
+        ZIndex: =7
+
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =70
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =21
+        Width: =575
+        X: =37
+        Y: =487
+        ZIndex: =8
+
